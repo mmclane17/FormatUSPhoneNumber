@@ -1,9 +1,0 @@
-<aura:component implements="flexipage:availableForAllPageTypes">
-    
-    <aura:attribute name="clientContactNumber" type="String" access="public" description="Phone number where customer can be reached" />
-    
-    <lightning:input aura:id="clientContactNumber" type="text" label="Client Contact Phone Number: " value="{!v.clientContactNumber}" required="true"
-                     maxlength="13" minlength="10" placeholder="(xxx)xxx-xxxx" pattern="[\(][0-9]{3}[\)][0-9]{3}[\-][0-9]{4}"
-                     messageWhenPatternMismatch="Please enter a 10 digit phone number."
-                     messageWhenValueMissing="This field is required, please enter a 10 digits phone number." onchange="{!c.handleTelephone}"/>
-</aura:component>
